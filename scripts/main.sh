@@ -36,9 +36,9 @@ fi
 WORKSPACE="${WORKSPACE%/}"
 
 # ------------------------------------------------------------
-# 3. Automatically append F1-Analytics
+# 3. Automatically append Formula1-Racing-Analytics
 # ------------------------------------------------------------
-PROJECT_ROOT="$WORKSPACE/F1-Analytics"
+PROJECT_ROOT="$WORKSPACE/Formula1-Racing-Analytics"
 
 echo "✔ WORKSPACE (parent) = $WORKSPACE"
 echo "✔ PROJECT ROOT       = $PROJECT_ROOT"
