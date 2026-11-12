@@ -1,37 +1,37 @@
 WARNING: Using incubator modules: jdk.incubator.vector
 Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
-26/11/11 06:21:11 WARN Utils: Your hostname, Manohars-MacBook-Air.local, resolves to a loopback address: 127.0.0.1; using 10.84.5.178 instead (on interface en0)
-26/11/11 06:21:11 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+26/11/12 05:30:00 WARN Utils: Your hostname, Manohars-MacBook-Air.local, resolves to a loopback address: 127.0.0.1; using 10.84.5.178 instead (on interface en0)
+26/11/12 05:30:00 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
 Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
 Setting default log level to "WARN".
 To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
-26/11/11 06:21:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-26/11/11 06:21:13 WARN SparkSession: Using an existing Spark session; only runtime SQL configurations will take effect.
-[INFO] WORKSPACE = /Users/manoharazalki/Formula1-Racing-Analytics
+26/11/12 05:30:01 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/11/12 05:30:02 WARN SparkSession: Using an existing Spark session; only runtime SQL configurations will take effect.
+[INFO] WORKSPACE = /Users/manoharazalki/DataManagement
 [INFO] BATCH_ID  = 2026-02
-[INFO] silver_helpers WORKSPACE = /Users/manoharazalki/Formula1-Racing-Analytics
+[INFO] silver_helpers WORKSPACE = /Users/manoharazalki/DataManagement
 [INFO] silver_helpers loaded successfully.
-[INFO] Bronze path: /Users/manoharazalki/Formula1-Racing-Analytics/data/bronze/circuits/circuits.parquet
-[INFO] Silver path: /Users/manoharazalki/Formula1-Racing-Analytics/data/silver/circuits/circuits.parquet
+[INFO] Bronze path: /Users/manoharazalki/DataManagement/data/bronze/circuits/circuits.parquet
+[INFO] Silver path: /Users/manoharazalki/DataManagement/data/silver/circuits/circuits.parquet
 [INFO] ✔ Bronze circuits read
 +-----------+--------------------+--------------------+--------+--------+---------+----------+--------------------+--------------------+--------+
 |  circuitId|                 url|         circuitName|     lat|    long| locality|   country|    ingest_timestamp|         source_file|batch_id|
 +-----------+--------------------+--------------------+--------+--------+---------+----------+--------------------+--------------------+--------+
-|albert_park|https://en.wikipe...|Albert Park Grand...|-37.8497| 144.968|Melbourne| Australia|2026-11-11 06:20:...|/Users/manoharaza...| 2026-02|
-|   americas|https://en.wikipe...|Circuit of the Am...| 30.1328|-97.6411|   Austin|       USA|2026-11-11 06:20:...|/Users/manoharaza...| 2026-02|
-|       baku|https://en.wikipe...|   Baku City Circuit| 40.3725| 49.8533|     Baku|Azerbaijan|2026-11-11 06:20:...|/Users/manoharaza...| 2026-02|
-|  catalunya|https://en.wikipe...|Circuit de Barcel...|   41.57| 2.26111|Barcelona|     Spain|2026-11-11 06:20:...|/Users/manoharaza...| 2026-02|
-|hungaroring|https://en.wikipe...|         Hungaroring| 47.5789| 19.2486| Budapest|   Hungary|2026-11-11 06:20:...|/Users/manoharaza...| 2026-02|
+|albert_park|https://en.wikipe...|Albert Park Grand...|-37.8497| 144.968|Melbourne| Australia|2026-11-12 05:29:...|/Users/manoharaza...| 2026-02|
+|   americas|https://en.wikipe...|Circuit of the Am...| 30.1328|-97.6411|   Austin|       USA|2026-11-12 05:29:...|/Users/manoharaza...| 2026-02|
+|       baku|https://en.wikipe...|   Baku City Circuit| 40.3725| 49.8533|     Baku|Azerbaijan|2026-11-12 05:29:...|/Users/manoharaza...| 2026-02|
+|  catalunya|https://en.wikipe...|Circuit de Barcel...|   41.57| 2.26111|Barcelona|     Spain|2026-11-12 05:29:...|/Users/manoharaza...| 2026-02|
+|hungaroring|https://en.wikipe...|         Hungaroring| 47.5789| 19.2486| Budapest|   Hungary|2026-11-12 05:29:...|/Users/manoharaza...| 2026-02|
 +-----------+--------------------+--------------------+--------+--------+---------+----------+--------------------+--------------------+--------+
 only showing top 5 rows
-[INFO] ✔ Circuits Silver written: /Users/manoharazalki/Formula1-Racing-Analytics/data/silver/circuits/circuits.parquet
+[INFO] ✔ Circuits Silver written: /Users/manoharazalki/DataManagement/data/silver/circuits/circuits.parquet
 +-----------+--------------------+--------+---------+---------+------------+--------------------+--------------------+--------+--------------------+--------------------+
 | circuit_id|        circuit_name|latitude|longitude| locality|country_name|    ingest_timestamp|         source_file|batch_id|   created_timestamp|   updated_timestamp|
 +-----------+--------------------+--------+---------+---------+------------+--------------------+--------------------+--------+--------------------+--------------------+
-|albert_park|Albert Park Grand...|-37.8497|  144.968|Melbourne|   Australia|2026-11-11 06:20:...|/Users/manoharaza...| 2026-02|2026-11-11 06:21:...|2026-11-11 06:21:...|
-|   americas|Circuit Of The Am...| 30.1328| -97.6411|   Austin|         USA|2026-11-11 06:20:...|/Users/manoharaza...| 2026-02|2026-11-11 06:21:...|2026-11-11 06:21:...|
-|       baku|   Baku City Circuit| 40.3725|  49.8533|     Baku|  Azerbaijan|2026-11-11 06:20:...|/Users/manoharaza...| 2026-02|2026-11-11 06:21:...|2026-11-11 06:21:...|
-|  catalunya|Circuit De Barcel...|   41.57|  2.26111|Barcelona|       Spain|2026-11-11 06:20:...|/Users/manoharaza...| 2026-02|2026-11-11 06:21:...|2026-11-11 06:21:...|
-|hungaroring|         Hungaroring| 47.5789|  19.2486| Budapest|     Hungary|2026-11-11 06:20:...|/Users/manoharaza...| 2026-02|2026-11-11 06:21:...|2026-11-11 06:21:...|
+|albert_park|Albert Park Grand...|-37.8497|  144.968|Melbourne|   Australia|2026-11-12 05:29:...|/Users/manoharaza...| 2026-02|2026-11-12 05:30:...|2026-11-12 05:30:...|
+|   americas|Circuit Of The Am...| 30.1328| -97.6411|   Austin|         USA|2026-11-12 05:29:...|/Users/manoharaza...| 2026-02|2026-11-12 05:30:...|2026-11-12 05:30:...|
+|       baku|   Baku City Circuit| 40.3725|  49.8533|     Baku|  Azerbaijan|2026-11-12 05:29:...|/Users/manoharaza...| 2026-02|2026-11-12 05:30:...|2026-11-12 05:30:...|
+|  catalunya|Circuit De Barcel...|   41.57|  2.26111|Barcelona|       Spain|2026-11-12 05:29:...|/Users/manoharaza...| 2026-02|2026-11-12 05:30:...|2026-11-12 05:30:...|
+|hungaroring|         Hungaroring| 47.5789|  19.2486| Budapest|     Hungary|2026-11-12 05:29:...|/Users/manoharaza...| 2026-02|2026-11-12 05:30:...|2026-11-12 05:30:...|
 +-----------+--------------------+--------+---------+---------+------------+--------------------+--------------------+--------+--------------------+--------------------+
 only showing top 5 rows

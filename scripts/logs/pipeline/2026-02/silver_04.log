@@ -1,37 +1,37 @@
 WARNING: Using incubator modules: jdk.incubator.vector
 Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
-26/11/11 06:21:28 WARN Utils: Your hostname, Manohars-MacBook-Air.local, resolves to a loopback address: 127.0.0.1; using 10.84.5.178 instead (on interface en0)
-26/11/11 06:21:28 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+26/11/12 05:30:16 WARN Utils: Your hostname, Manohars-MacBook-Air.local, resolves to a loopback address: 127.0.0.1; using 10.84.5.178 instead (on interface en0)
+26/11/12 05:30:16 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
 Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
 Setting default log level to "WARN".
 To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
-26/11/11 06:21:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-26/11/11 06:21:29 WARN SparkSession: Using an existing Spark session; only runtime SQL configurations will take effect.
-[INFO] WORKSPACE = /Users/manoharazalki/Formula1-Racing-Analytics
+26/11/12 05:30:17 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/11/12 05:30:18 WARN SparkSession: Using an existing Spark session; only runtime SQL configurations will take effect.
+[INFO] WORKSPACE = /Users/manoharazalki/DataManagement
 [INFO] BATCH_ID  = 2026-02
-[INFO] silver_helpers WORKSPACE = /Users/manoharazalki/Formula1-Racing-Analytics
+[INFO] silver_helpers WORKSPACE = /Users/manoharazalki/DataManagement
 [INFO] silver_helpers loaded successfully.
-[INFO] Bronze path: /Users/manoharazalki/Formula1-Racing-Analytics/data/bronze/constructors/constructors.parquet
-[INFO] Silver path: /Users/manoharazalki/Formula1-Racing-Analytics/data/silver/constructors/constructors.parquet
+[INFO] Bronze path: /Users/manoharazalki/DataManagement/data/bronze/constructors/constructors.parquet
+[INFO] Silver path: /Users/manoharazalki/DataManagement/data/silver/constructors/constructors.parquet
 [INFO] ✔ Bronze constructors read
-+-------------+----------------+-----------+---------------------------------------------------------+--------------------------+-------------------------------------------------------------------------------------+--------+
-|constructorId|name            |nationality|url                                                      |ingest_timestamp          |source_file                                                                          |batch_id|
-+-------------+----------------+-----------+---------------------------------------------------------+--------------------------+-------------------------------------------------------------------------------------+--------+
-|alpine       |Alpine F1 Team  |French     |https://en.wikipedia.org/wiki/Alpine_F1_Team             |2026-11-11 06:21:00.320227|/Users/manoharazalki/Formula1-Racing-Analytics/data/landing/2026-02/constructors.json|2026-02 |
-|aston_martin |Aston Martin    |British    |https://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One|2026-11-11 06:21:00.320227|/Users/manoharazalki/Formula1-Racing-Analytics/data/landing/2026-02/constructors.json|2026-02 |
-|audi         |Audi            |German     |https://en.wikipedia.org/wiki/Audi_in_Formula_One        |2026-11-11 06:21:00.320227|/Users/manoharazalki/Formula1-Racing-Analytics/data/landing/2026-02/constructors.json|2026-02 |
-|cadillac     |Cadillac F1 Team|American   |https://en.wikipedia.org/wiki/Cadillac_in_Formula_One    |2026-11-11 06:21:00.320227|/Users/manoharazalki/Formula1-Racing-Analytics/data/landing/2026-02/constructors.json|2026-02 |
-|ferrari      |Ferrari         |Italian    |https://en.wikipedia.org/wiki/Scuderia_Ferrari           |2026-11-11 06:21:00.320227|/Users/manoharazalki/Formula1-Racing-Analytics/data/landing/2026-02/constructors.json|2026-02 |
-+-------------+----------------+-----------+---------------------------------------------------------+--------------------------+-------------------------------------------------------------------------------------+--------+
++-------------+----------------+-----------+---------------------------------------------------------+-------------------------+--------------------------------------------------------------------------+--------+
+|constructorId|name            |nationality|url                                                      |ingest_timestamp         |source_file                                                               |batch_id|
++-------------+----------------+-----------+---------------------------------------------------------+-------------------------+--------------------------------------------------------------------------+--------+
+|alpine       |Alpine F1 Team  |French     |https://en.wikipedia.org/wiki/Alpine_F1_Team             |2026-11-12 05:29:49.65416|/Users/manoharazalki/DataManagement/data/landing/2026-02/constructors.json|2026-02 |
+|aston_martin |Aston Martin    |British    |https://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One|2026-11-12 05:29:49.65416|/Users/manoharazalki/DataManagement/data/landing/2026-02/constructors.json|2026-02 |
+|audi         |Audi            |German     |https://en.wikipedia.org/wiki/Audi_in_Formula_One        |2026-11-12 05:29:49.65416|/Users/manoharazalki/DataManagement/data/landing/2026-02/constructors.json|2026-02 |
+|cadillac     |Cadillac F1 Team|American   |https://en.wikipedia.org/wiki/Cadillac_in_Formula_One    |2026-11-12 05:29:49.65416|/Users/manoharazalki/DataManagement/data/landing/2026-02/constructors.json|2026-02 |
+|ferrari      |Ferrari         |Italian    |https://en.wikipedia.org/wiki/Scuderia_Ferrari           |2026-11-12 05:29:49.65416|/Users/manoharazalki/DataManagement/data/landing/2026-02/constructors.json|2026-02 |
++-------------+----------------+-----------+---------------------------------------------------------+-------------------------+--------------------------------------------------------------------------+--------+
 only showing top 5 rows
-[INFO] ✔ Constructors Silver written: /Users/manoharazalki/Formula1-Racing-Analytics/data/silver/constructors/constructors.parquet
-+--------------+----------------+-----------+---------------------------------------------------------+--------------------------+-------------------------------------------------------------------------------------+--------+--------------------------+--------------------------+
-|constructor_id|constructor_name|nationality|url                                                      |ingest_timestamp          |source_file                                                                          |batch_id|created_timestamp         |updated_timestamp         |
-+--------------+----------------+-----------+---------------------------------------------------------+--------------------------+-------------------------------------------------------------------------------------+--------+--------------------------+--------------------------+
-|alpine        |Alpine F1 Team  |French     |https://en.wikipedia.org/wiki/Alpine_F1_Team             |2026-11-11 06:21:00.320227|/Users/manoharazalki/Formula1-Racing-Analytics/data/landing/2026-02/constructors.json|2026-02 |2026-11-11 06:21:31.301615|2026-11-11 06:21:31.301615|
-|aston_martin  |Aston Martin    |British    |https://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One|2026-11-11 06:21:00.320227|/Users/manoharazalki/Formula1-Racing-Analytics/data/landing/2026-02/constructors.json|2026-02 |2026-11-11 06:21:31.301615|2026-11-11 06:21:31.301615|
-|audi          |Audi            |German     |https://en.wikipedia.org/wiki/Audi_in_Formula_One        |2026-11-11 06:21:00.320227|/Users/manoharazalki/Formula1-Racing-Analytics/data/landing/2026-02/constructors.json|2026-02 |2026-11-11 06:21:31.301615|2026-11-11 06:21:31.301615|
-|cadillac      |Cadillac F1 Team|American   |https://en.wikipedia.org/wiki/Cadillac_in_Formula_One    |2026-11-11 06:21:00.320227|/Users/manoharazalki/Formula1-Racing-Analytics/data/landing/2026-02/constructors.json|2026-02 |2026-11-11 06:21:31.301615|2026-11-11 06:21:31.301615|
-|ferrari       |Ferrari         |Italian    |https://en.wikipedia.org/wiki/Scuderia_Ferrari           |2026-11-11 06:21:00.320227|/Users/manoharazalki/Formula1-Racing-Analytics/data/landing/2026-02/constructors.json|2026-02 |2026-11-11 06:21:31.301615|2026-11-11 06:21:31.301615|
-+--------------+----------------+-----------+---------------------------------------------------------+--------------------------+-------------------------------------------------------------------------------------+--------+--------------------------+--------------------------+
+[INFO] ✔ Constructors Silver written: /Users/manoharazalki/DataManagement/data/silver/constructors/constructors.parquet
++--------------+----------------+-----------+---------------------------------------------------------+-------------------------+--------------------------------------------------------------------------+--------+--------------------------+--------------------------+
+|constructor_id|constructor_name|nationality|url                                                      |ingest_timestamp         |source_file                                                               |batch_id|created_timestamp         |updated_timestamp         |
++--------------+----------------+-----------+---------------------------------------------------------+-------------------------+--------------------------------------------------------------------------+--------+--------------------------+--------------------------+
+|alpine        |Alpine F1 Team  |French     |https://en.wikipedia.org/wiki/Alpine_F1_Team             |2026-11-12 05:29:49.65416|/Users/manoharazalki/DataManagement/data/landing/2026-02/constructors.json|2026-02 |2026-11-12 05:30:19.866765|2026-11-12 05:30:19.866765|
+|aston_martin  |Aston Martin    |British    |https://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One|2026-11-12 05:29:49.65416|/Users/manoharazalki/DataManagement/data/landing/2026-02/constructors.json|2026-02 |2026-11-12 05:30:19.866765|2026-11-12 05:30:19.866765|
+|audi          |Audi            |German     |https://en.wikipedia.org/wiki/Audi_in_Formula_One        |2026-11-12 05:29:49.65416|/Users/manoharazalki/DataManagement/data/landing/2026-02/constructors.json|2026-02 |2026-11-12 05:30:19.866765|2026-11-12 05:30:19.866765|
+|cadillac      |Cadillac F1 Team|American   |https://en.wikipedia.org/wiki/Cadillac_in_Formula_One    |2026-11-12 05:29:49.65416|/Users/manoharazalki/DataManagement/data/landing/2026-02/constructors.json|2026-02 |2026-11-12 05:30:19.866765|2026-11-12 05:30:19.866765|
+|ferrari       |Ferrari         |Italian    |https://en.wikipedia.org/wiki/Scuderia_Ferrari           |2026-11-12 05:29:49.65416|/Users/manoharazalki/DataManagement/data/landing/2026-02/constructors.json|2026-02 |2026-11-12 05:30:19.866765|2026-11-12 05:30:19.866765|
++--------------+----------------+-----------+---------------------------------------------------------+-------------------------+--------------------------------------------------------------------------+--------+--------------------------+--------------------------+
 only showing top 5 rows

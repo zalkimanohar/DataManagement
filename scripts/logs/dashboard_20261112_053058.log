@@ -1,0 +1,31 @@
+==============================================
+🏎️ F1 Analytics — DASHBOARD LAUNCHER
+==============================================
+✔ WORKSPACE     = /Users/manoharazalki/DataManagement
+✔ PROJECT ROOT  = /Users/manoharazalki/DataManagement
+✔ DASHBOARD DIR = /Users/manoharazalki/DataManagement/dashboard
+✔ LOG FILE      = /Users/manoharazalki/DataManagement/scripts/logs/dashboard_20261112_053058.log
+
+🚀 Launching Streamlit Dashboard...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.84.5.178:8501
+
+2026-11-12 05:31:01.658 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-11-12 05:38:31.552 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+  Stopping...
+
+==============================================
+🎉 Dashboard exited
+Log saved at: /Users/manoharazalki/DataManagement/scripts/logs/dashboard_20261112_053058.log
+==============================================
